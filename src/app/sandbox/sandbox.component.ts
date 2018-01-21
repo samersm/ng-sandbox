@@ -7,20 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SandboxComponent implements OnInit {
   isSpecial = true;
-  canSave = false;
-  currentClasses = {};
+  canSave = true;
+  currentStyles = {};
 
   constructor() {
-     this.setCurrentClasses();
+     this.setCurrentStyles();
   }
 
   ngOnInit() {
   }
 
-  setCurrentClasses(){
-      this.currentClasses = {
-          saveable:this.canSave,
-          special: this.isSpecial
+  setCurrentStyles(){
+      this.currentStyles = {
+          'font-style': this.canSave ? 'italic' : 'normal',
+          'font-size': this.isSpecial ? '24px' : '12px'
       }
   }
 
