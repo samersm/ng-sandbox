@@ -1,2 +1,5 @@
 $ ng new ng-sandbox
 commit..
+
+$ ng g component sandbox
+commit..
