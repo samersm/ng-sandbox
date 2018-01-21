@@ -6,22 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  isSpecial = true;
-  canSave = true;
-  currentStyles = {};
+  birthday = new Date(1981, 1, 15);
+  total = 500;
+  fee = 0.5;
 
   constructor() {
-     this.setCurrentStyles();
   }
 
   ngOnInit() {
-  }
-
-  setCurrentStyles(){
-      this.currentStyles = {
-          'font-style': this.canSave ? 'italic' : 'normal',
-          'font-size': this.isSpecial ? '24px' : '12px'
-      }
   }
 
 }
