@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  name:string = 'John Doe';
-  showName:boolean = true;
-  greeting:number = 88;
+  imageUrl:string = 'http://lorempixel.com/400/200/';
+  isUnchanged:boolean = false;
 
   constructor() {
   }
