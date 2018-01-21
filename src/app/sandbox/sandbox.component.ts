@@ -6,29 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  people = ['Rick', 'Daryl', 'Carl', 'Glen'];
-
-  people2 = [
-      {
-          firstName:'Rick',
-          lastName: 'Grimes'
-      },
-      {
-          firstName:'Daryl',
-          lastName: 'Dixon'
-      },
-      {
-          firstName:'Carl',
-          lastName: 'Grimes'
-      },
-      {
-          firstName:'Glen',
-          lastName: 'Rhee'
-      },
-  ];
+  name:string = 'John Doe';
+  showName:boolean = true;
+  greeting:number = 88;
 
   constructor() {
-        this.people[2] = 'Carol';
   }
 
   ngOnInit() {
