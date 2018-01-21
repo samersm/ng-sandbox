@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Customer } from '../models/customer';
 
 @Component({
   selector: 'app-sandbox',
@@ -6,19 +7,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  name:string = 'John Doe';
-  age:number = 35;
-  hasChildren:boolean = true;
-  city:any = 'Boston';
-  myNumbersArray:number[] = [1,2,3];
-  myStringsArray:string[] = ['hello', 'world'];
-  myAnyArray:any[] = [1,2,'hello'];
-  myTuple: [string, number] = ['hello', 3];
-  unusable: void = undefined;
-  u: undefined = undefined;
-  n: null = null;
+  customer: Customer;
+  customers: Customer[];
 
   constructor() {
+    this.customer = {
+        id:1,
+        name:'John Doe',
+        email:'john@gmail.com'
+    }
+
+    this.customers = [
+        {
+            id:1,
+            name:'John Doe',
+            email:'john@gmail.com'
+        },
+        {
+            id:2,
+            name:'Brad Traversy',
+            email:'brad@gmail.com'
+        },
+        {
+            id:3,
+            name:'Steve Smith',
+            email:'ssmith@gmail.com'
+        }
+    ];
   }
 
   ngOnInit() {
