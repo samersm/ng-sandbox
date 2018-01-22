@@ -26,6 +26,7 @@
           <br>
           <button class="btn btn-primary btn-sm" (click)="onEditClick(user)">Edit</button>
           <button class="btn btn-danger btn-sm" (click)="onDeleteClick(user.id)">Delete</button>
+          <a routerLink="/user/{{user.id}}" class="btn btn-light btn-sm">View</a>
           <br><br>
       </div>
   </div>
