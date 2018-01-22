@@ -6,3 +6,9 @@ commit..
 
 $ ng g service services/data --module=app
 commit..
+
+$ ng generate module config/app-routing --flat --module=app
+$ ng g component views/home
+$ ng g component views/about
+$ ng g component views/navbar
+commit..

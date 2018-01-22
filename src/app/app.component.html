@@ -1,2 +1,8 @@
-<p>Hello from Angular</p>
-<app-sandbox></app-sandbox>
+<app-navbar></app-navbar>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+<button (click)="changeValue()" class="btn btn-info">SandBox</button>
+<div *ngIf="value">
+  <app-sandbox></app-sandbox>
+</div>
