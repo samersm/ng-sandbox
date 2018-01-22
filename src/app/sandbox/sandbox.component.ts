@@ -9,6 +9,11 @@ import { DataService } from '../services/data.service';
 })
 export class SandboxComponent implements OnInit {
   users:any[];
+  user = {
+      name:'',
+      email:'',
+      phone:''
+  }
 
   constructor(public dataService:DataService) {
     this.dataService.getUsers().subscribe(users => {
@@ -18,6 +23,13 @@ export class SandboxComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  onSubmit() {
+      this.dataService.addUser(this.user).subscribe(user => {
+          console.log(user);
+          this.users.unshift(user);
+      });
   }
 
 }
