@@ -71,4 +71,8 @@ export class SandboxComponent implements OnInit {
       this.user = user;
   }
 
+  onView() {
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
+
 }
