@@ -6,7 +6,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class DataService {
-  baseUrl = "http://jsonplaceholder.typicode.com/users"
+  baseUrl = "http://jsonplaceholder.typicode.com/users/"
 
   constructor(public http:Http) { }
 
@@ -18,6 +18,11 @@ export class DataService {
 
       addUser(user){
           return this.http.post(this.baseUrl, user)
+              .map(res => res.json());
+      }
+
+      deleteUser(id){
+          return this.http.delete(this.baseUrl + id)
               .map(res => res.json());
       }
 }
