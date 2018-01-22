@@ -8,12 +8,12 @@ import { DataService } from '../services/data.service';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  data:any[] = [];
+  users:any[];
 
   constructor(public dataService:DataService) {
-    this.dataService.getData().subscribe(data => {
-        // console.log(data);
-        this.data.push(data);
+    this.dataService.getUsers().subscribe(users => {
+        //console.log(users);
+        this.users = users;
     });
   }
 
