@@ -6,20 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  text:string = 'Hello';
+  name:string = '';
+  age:number = 0;
 
   constructor() {
   }
 
   ngOnInit() {
-  }
-
-  fireEvent(e){
-      console.log(e.type);
-  }
-
-  changeText(e){
-      this.text = e.target.value;
   }
 
 }
