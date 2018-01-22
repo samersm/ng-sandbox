@@ -2,7 +2,7 @@
 <div class="container" style="margin-top:80px">
     <router-outlet></router-outlet>
 </div>
-<button (click)="changeValue()" class="btn btn-info position-fixed">SandBox</button>
-<div *ngIf="value">
+<button (click)="dataService.changeValue()" class="btn btn-info position-fixed" hidden>SandBox</button>
+<div *ngIf="dataService.value">
   <app-sandbox></app-sandbox>
 </div>

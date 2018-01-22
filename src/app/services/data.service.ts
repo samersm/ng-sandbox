@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class DataService {
   baseUrl = "http://jsonplaceholder.typicode.com/users/"
+  value:boolean = false;
 
   constructor(public http:Http) { }
 
@@ -29,5 +30,10 @@ export class DataService {
       updateUser(user){
           return this.http.put(this.baseUrl + user.id, user)
               .map(res => res.json());
+      }
+
+      changeValue(){
+          //this.value = false;
+          this.value = !this.value;
       }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  value:boolean = false;
-
-  changeValue(){
-      //this.value = false;
-      this.value = !this.value;
-  }
+  // value:boolean = false;
+  constructor(public dataService:DataService) {
+      // this.dataService.changeValue()
+   }
+  // changeValue(){
+  //     //this.value = false;
+  //     this.value = !this.value;
+  // }
 }
