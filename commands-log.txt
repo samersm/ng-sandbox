@@ -12,3 +12,6 @@ $ ng g component views/home
 $ ng g component views/about
 $ ng g component views/navbar
 commit..
+
+$ ng g component views/userDetails
+commit..

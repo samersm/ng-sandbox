@@ -11,6 +11,7 @@ import { AppRoutingModule } from './config/app-routing.module';
 import { HomeComponent } from './views/home/home.component';
 import { AboutComponent } from './views/about/about.component';
 import { NavbarComponent } from './views/navbar/navbar.component';
+import { UserDetailsComponent } from './views/user-details/user-details.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { NavbarComponent } from './views/navbar/navbar.component';
     SandboxComponent,
     HomeComponent,
     AboutComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserDetailsComponent
   ],
   imports: [
     BrowserModule,
