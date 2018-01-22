@@ -1,8 +1,14 @@
 <h1>Hi!</h1>
-<p>My birthday is {{ birthday | date | uppercase}}</p>
-<p>My birthday is {{ birthday | date:"MM-dd-yyyy"}}</p>
-<p>I was born in {{ birthday | date:"yyyy" }}</p>
-<p>I love {{ 'cake' | uppercase}}</p>
-<p>I hate {{ 'CATS' | lowercase}}</p>
-<p>Your total is {{ total | currency:"GBP":"1"}}</p>
-<p>Our fee is {{ fee | percent }}</p>
+<button id="btn" (click)="fireEvent($event)">Click Event</button>
+<br>
+<button id="btn" (mouseover)="fireEvent($event)">Mouseover Event</button>
+<br>
+<button id="btn" (mousedown)="fireEvent($event)">Mousedown Event</button>
+<br>
+<button id="btn" (mouseup)="fireEvent($event)">Mouseup Event</button>
+<br>
+<button id="btn" (dblclick)="fireEvent($event)">Double Click Event</button>
+<br>
+<button id="btn" (drag)="fireEvent($event)">Drag Event</button>
+<br>
+<button id="btn" (dragover)="fireEvent($event)">Drag Over Event</button>

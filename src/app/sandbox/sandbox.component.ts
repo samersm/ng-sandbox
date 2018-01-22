@@ -6,14 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  birthday = new Date(1981, 1, 15);
-  total = 500;
-  fee = 0.5;
 
   constructor() {
   }
 
   ngOnInit() {
+  }
+
+  fireEvent(e){
+      //console.log('Button Clicked');
+      //console.log(greeting);
+      console.log(e.type);
   }
 
 }
