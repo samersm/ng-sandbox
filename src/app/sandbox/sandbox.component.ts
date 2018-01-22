@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SandboxComponent implements OnInit {
   name:string = '';
-  age:number = 0;
+  users:string[] = ['John Doe', 'Mary Swanson', 'Kevin Smith'];
 
   constructor() {
   }
@@ -15,4 +15,8 @@ export class SandboxComponent implements OnInit {
   ngOnInit() {
   }
 
+  onSubmit(){
+      this.users.push(this.name);
+      this.name = '';
+  }
 }
