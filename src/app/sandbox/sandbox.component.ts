@@ -6,17 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-
+  text:string = 'Hello World';
+  value:boolean = true;
+  
   constructor() {
   }
 
   ngOnInit() {
   }
 
-  fireEvent(e){
-      //console.log('Button Clicked');
-      //console.log(greeting);
-      console.log(e.type);
+  changeValue(){
+      //this.value = false;
+      this.value = !this.value;
   }
 
 }
