@@ -43,11 +43,13 @@ export class SandboxComponent implements OnInit {
                       this.users.splice(i,1);
                   }
               }
+              // You Can Use push Instead of unshift
               this.users.unshift(this.user);
           });
       } else {
           this.dataService.addUser(this.user).subscribe(user => {
               console.log(user);
+                // You Can Use push Instead of unshift
               this.users.unshift(user);
           });
       }
