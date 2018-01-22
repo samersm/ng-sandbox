@@ -3,3 +3,6 @@ commit..
 
 $ ng g component sandbox
 commit..
+
+$ ng g service services/data --module=app
+commit..

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
+
 
 @Component({
   selector: 'app-sandbox',
@@ -6,23 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  user = {
-      name:'',
-      email:'',
-      phone:''
-  }
+    users:string[];
 
-  constructor() {
+  constructor(public dataService:DataService) {
+    this.users = this.dataService.getUsers();
   }
 
   ngOnInit() {
   }
 
-  onSubmit({value, valid}){
-   if(valid){
-       console.log(value);
-   } else {
-       console.log('Form is invalid');
-   }
-  }
 }
