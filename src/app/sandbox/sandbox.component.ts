@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sandbox.component.css']
 })
 export class SandboxComponent implements OnInit {
-  name:string = '';
-  users:string[] = ['John Doe', 'Mary Swanson', 'Kevin Smith'];
+  user = {
+      name:'',
+      email:'',
+      phone:''
+  }
 
   constructor() {
   }
@@ -15,8 +18,11 @@ export class SandboxComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(){
-      this.users.push(this.name);
-      this.name = '';
+  onSubmit({value, valid}){
+   if(valid){
+       console.log(value);
+   } else {
+       console.log('Form is invalid');
+   }
   }
 }
