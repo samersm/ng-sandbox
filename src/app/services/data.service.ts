@@ -25,4 +25,9 @@ export class DataService {
           return this.http.delete(this.baseUrl + id)
               .map(res => res.json());
       }
+
+      updateUser(user){
+          return this.http.put(this.baseUrl + user.id, user)
+              .map(res => res.json());
+      }
 }
