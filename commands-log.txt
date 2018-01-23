@@ -18,3 +18,21 @@ commit..
 
 $ ng g component views/gallery
 commit..
+
+$ ng g component views/methods/methodA
+$ ng g component views/methods/methodB
+$ ng g component views/methods/methodC
+$ ng g component views/methods/methodD
+$ ng g component views/methods/methodE
+$ ng g component views/methods/methodF
+$ ng g component views/methods/methodG
+$ ng g component views/methods/methodH
+$ ng g component views/methods/methodI
+$ ng g component views/methods/methodJ
+$ ng g component views/methods/methodK
+$ ng g component views/methods/methodL
+$ ng g component views/methods/methodM
+$ ng g component views/methods/methodN
+$ ng g component views/methods/methodO
+$ ng g component views/methods/methodP
+commit..
