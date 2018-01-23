@@ -16,6 +16,8 @@ import { MethodHComponent } from '../views/methods/method-h/method-h.component';
 import { MethodIComponent } from '../views/methods/method-i/method-i.component';
 import { MethodJComponent } from '../views/methods/method-j/method-j.component';
 import { MethodKComponent } from '../views/methods/method-k/method-k.component';
+import { MethodLComponent } from '../views/methods/method-l/method-l.component';
+import { MethodMComponent } from '../views/methods/method-m/method-m.component';
 
 const appRoutes: Routes = [
   {path:'', component:HomeComponent},
@@ -32,7 +34,9 @@ const appRoutes: Routes = [
   { path: 'gallery/onclick', component: MethodHComponent },
   { path: 'gallery/onchange', component: MethodIComponent },
   { path: 'gallery/input', component: MethodJComponent },
-  { path: 'gallery/forms', component: MethodKComponent }
+  { path: 'gallery/forms', component: MethodKComponent },
+  { path: 'gallery/onsubmit', component: MethodLComponent },
+  { path: 'gallery/validates', component: MethodMComponent }
 ];
 
 @NgModule({

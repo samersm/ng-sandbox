@@ -24,6 +24,8 @@ import { MethodHComponent } from './views/methods/method-h/method-h.component';
 import { MethodIComponent } from './views/methods/method-i/method-i.component';
 import { MethodJComponent } from './views/methods/method-j/method-j.component';
 import { MethodKComponent } from './views/methods/method-k/method-k.component';
+import { MethodLComponent } from './views/methods/method-l/method-l.component';
+import { MethodMComponent } from './views/methods/method-m/method-m.component';
 
 
 @NgModule({
@@ -45,7 +47,9 @@ import { MethodKComponent } from './views/methods/method-k/method-k.component';
     MethodHComponent,
     MethodIComponent,
     MethodJComponent,
-    MethodKComponent
+    MethodKComponent,
+    MethodLComponent,
+    MethodMComponent
   ],
   imports: [
     BrowserModule,
