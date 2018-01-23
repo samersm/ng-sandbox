@@ -4,11 +4,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from '../views/home/home.component';
 import { AboutComponent } from '../views/about/about.component';
 import { UserDetailsComponent } from '../views/user-details/user-details.component';
+import { GalleryComponent } from '../views/gallery/gallery.component';
 
 const appRoutes: Routes = [
   {path:'', component:HomeComponent},
   {path:'about', component:AboutComponent},
-  {path:'user/:id', component:UserDetailsComponent}
+  {path:'user/:id', component:UserDetailsComponent},
+  { path: 'gallery', component: GalleryComponent }
 ];
 
 @NgModule({

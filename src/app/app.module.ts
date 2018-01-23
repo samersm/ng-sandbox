@@ -12,6 +12,7 @@ import { HomeComponent } from './views/home/home.component';
 import { AboutComponent } from './views/about/about.component';
 import { NavbarComponent } from './views/navbar/navbar.component';
 import { UserDetailsComponent } from './views/user-details/user-details.component';
+import { GalleryComponent } from './views/gallery/gallery.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { UserDetailsComponent } from './views/user-details/user-details.componen
     HomeComponent,
     AboutComponent,
     NavbarComponent,
-    UserDetailsComponent
+    UserDetailsComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
